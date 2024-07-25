@@ -1,0 +1,66 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar section */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(255, 255, 255); */
+  padding: 10px;
+  /* font-size: 16px; */
+}
+.logo img {
+  width: 150px;
+  height: 35px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navigation li {
+  padding-right: 10px;
+}
+.button {
+  background-color: blue;
+  color: white;
+  width: 80px;
+  height: 30px;
+}
+
+/* course section */
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-around;
+}
+
+/* students section */
+
+.successfull-students {
+  text-align: center;
+}
+.studends {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.studend-button {
+  background-color: rgb(13, 166, 236);
+  color: white;
+  width: 80px;
+  height: 30px;
+}
