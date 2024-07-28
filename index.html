@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Website</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <link rel="stylesheet" href="/assets/css/styles.css" /> -->
   </head>
   <body>
-    <div>
-      <section>
+    <div class="container mx-auto">
+      <header class="">
         <!-- Navigation bar section -->
-        <nav class="nav">
-          <div class="logo">
-            <img src="/assets/images/logo.png" alt="logo" />
+        <nav class="flex justify-between p-4">
+          <div class="w-38 h-16 text-4xl font-semibold text-[#4A4A4A]">
+            <p>Pro Edu</p>
           </div>
-          <ul class="navigation">
+          <ul class="flex gap-4 items-center">
             <li><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#deals">Deals</a></li>
@@ -23,14 +25,18 @@
             <li><a href="#register">Register</a></li>
           </ul>
 
-          <button class="button" type="button">Register</button>
+          <button
+            class="w-40 h-14 px-8 py-2 border-[#289BDE] rounded border-2 text-[#289BDE] font-bold"
+          >
+            Register
+          </button>
         </nav>
 
-        <!-- Slideshow section -->
-        <div class="slideshow">
+        <!-- banner section -->
+        <div class="">
           <div>
             <img
-              style="width: 100%"
+              class="w-full"
               src="/assets/images/cover/cover-1.png"
               alt="cover-1"
             />
@@ -50,24 +56,32 @@
             />
           </div>
         </div>
-      </section>
+      </header>
 
       <section>
-        <div>
-          <h2>Discover Our Popular Courses</h2>
-          <p>
+        <div class="text-center pt-10">
+          <h2 class="font-semibold text-5xl landing-10 py-2">
+            Discover Our Popular Courses
+          </h2>
+          <p class="text-sm font-normal landing-8 py-2">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
         </div>
 
         <!-- courses section -->
-        <div class="courses">
-          <div class="card">
-            <img src="/assets/images/course/course-1.png" alt="course-1" />
+        <div class="grid grid-cols-2 pt-10 gap-3">
+          <div class="flex gap-3 items-center">
+            <img
+              class="w-48 h-48"
+              src="/assets/images/course/course-1.png"
+              alt="course-1"
+            />
             <div>
-              <h2>Fundamental Of UI/UX Design</h2>
-              <p>
+              <h2 class="font-semibold text-2xl">
+                Fundamental Of UI/UX Design
+              </h2>
+              <p class="text-sm font-normal">
                 Some quick example text to build on the card title and make up
                 the bulk of the card.
               </p>
@@ -75,7 +89,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="flex">
             <img src="/assets/images/course/course-2.png" alt="course-2" />
             <div>
               <h2>Javascript Basic to advanced</h2>
@@ -87,7 +101,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="flex">
             <img src="/assets/images/course/course-3.png" alt="course-3" />
             <div>
               <h2>Fullstack Web Development</h2>
@@ -99,7 +113,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="flex">
             <img src="/assets/images/course/course-4.png" alt="course-4" />
             <div>
               <h2>Digital Marketing</h2>
@@ -111,7 +125,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="flex col">
             <img src="/assets/images/course/course-5.png" alt="course-5" />
             <div>
               <h2>Photography Basic Rules</h2>
@@ -123,7 +137,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="flex">
             <img src="/assets/images/course/course-6.png" alt="course-6" />
             <div>
               <h2>Motion Graphics</h2>
